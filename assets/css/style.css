@@ -24,16 +24,20 @@ body {
 
 }
 
-#main-container {
+
+
+.main-container {
+  max-width: 960px;
+  margin: auto;
   padding-top: 130px;
+  padding-bottom: 65px;
   min-height: calc(100vh - 70px);
   overflow: hidden;
   display: block;
   position: relative;
-  
-  
-}
 
+
+}
 
 .container {
     width: 100%;
@@ -43,7 +47,10 @@ body {
     padding: 0;
   }
   
-
+.tracy-pic {
+  margin-top: 10px;
+  margin-left: -14px;
+}
 
 .navbar, .navheader {
   padding: 0;
@@ -95,14 +102,6 @@ a.nav-link:visited {
   color:#4aaaa5;
 }
 
-.main-container {
-  max-width: 960px;
-  margin: auto;
-  padding-top: 130px;
-  padding-bottom: 65px;
-
-
-}
 .main-section {
   float: left;
   width: 100%;
@@ -124,14 +123,7 @@ h1 {
 }
 
 
-img {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
-
+ 
 
 ul.sitelinks a:link,
 ul.sitelinks a:active,
@@ -141,7 +133,9 @@ ul.sitelinks a:visited
   display: inline-block;
   color: #4aaaa5;
   padding: 0;
-  
+}
+.sitelinks {
+  clear: both;
 }
 
 /*Contact page*/
@@ -183,31 +177,33 @@ input[type=submit] {
 
 /* portfolio pics */
 
-.img-fluidsize {
-  width: 290px;
-  height: 200px;
- 
+
+.row {
+  margin-right: 0;
 }
 
-.col-sm-3 {
-  margin-right: 72px;
+.underlay-images {
+  position: relative;
+  margin-bottom: 100px;
+
 }
-.col-sm-3 h3 {
+
+
+.overlay-images {
   position: absolute;
+  background-color: #4aaaa5;
+  color: #ffffff;
+  text-align: center;
+  border-bottom: 0;
   width: 100%;
-  bottom: 20px;
-  padding: 2px;
   margin-bottom: 0;
   font-weight: 300;
   line-height: 30px;
-  color: #ffffff;
-  text-align: center;
-  background: #4aaaa5;
-  border-bottom: 0;
+  top: 130px;
 }
 
-
 footer {
+  position: fixed;
   padding: 30px 0;
   clear: both;
   font-size: 12px;
